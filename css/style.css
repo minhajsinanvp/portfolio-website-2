@@ -1,0 +1,345 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+/* Animation Seciton */
+@keyframes moveLeft {
+    0% {
+        transform: translateY(100%);
+        background-color: transparent;
+    }
+    100% {
+        transform: translateX(0%); /* Move to the right of the viewport */
+        background-color: transparent;
+    }
+}
+
+/* Add this CSS code to your existing stylesheet */
+@keyframes fade-in {
+    0% {
+        opacity: 0; /* Start with full transparency (invisible) */
+    }
+    25% {
+        opacity: 0.25; /* Start with full transparency (invisible) */
+    }
+    50% {
+        opacity: 0.5; /* Start with full transparency (invisible) */
+    }
+    75% {
+        opacity: 0.75; /* Start with full transparency (invisible) */
+    }
+    100% {
+        opacity: 1; /* End with full visibility (visible) */
+    }
+}
+
+
+
+
+
+
+
+/* common styles */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+
+body {
+    width: 100%;
+    background-image: url("../images/background-img.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.section-headings{
+    color: greenyellow;
+    cursor: pointer;
+    transition: transform 1s ;
+    
+}
+
+
+.section-headings:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+/* navbar section */
+
+
+
+.navbar {
+    background-color: transparent !important;
+}
+
+.nav-body{
+    background-color:#152e58 !important;
+}
+
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
+
+.nav-link{
+    color: white;
+    transition: font-size .5s;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    /* color: rgb(206, 255, 11); */
+
+    /* color: black; */
+    font-size: 1.5rem;
+
+}
+.nav-link:hover{
+
+    font-size: 1.5rem;
+    color: rgb(141, 141, 140);
+    
+    
+}
+
+.navbar-toggler:hover  {
+    transform: rotate(180deg);
+}
+
+.nav-item{
+    margin: 0 0.5rem;
+}
+
+
+
+
+
+.btn-close{
+    background-color: white;
+}
+
+
+.btn-close:focus{
+    border: none;
+}
+
+
+.header-wrapper img{
+    display: flex;
+    position: relative;
+    width: 30%;
+    height: fit-conten;
+    border: 2px solid;
+}
+.offcanvas-title {
+    cursor: pointer;
+}
+.list-group,.list-group-item{
+    background-color: transparent !important;
+    ;
+    line-height: 5rem;
+}
+
+
+
+/* Home Section */
+
+
+.home-class{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.home-class-small{
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    
+}
+
+#home img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* About section */
+
+#about{
+    height: fit-content
+
+
+    /* height: 10vh; */
+}
+
+#about .container{
+    transition:background-color 1.5s ease-in-out, color 1s ;
+}
+
+
+#about .container:hover{
+    
+
+
+    
+}
+#about img{
+
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+    transition-duration: 1s;
+
+}
+
+#about img:hover{
+    transform: scale(1.1);
+}
+
+
+.about-content{
+    /* word-wrap: break-word; */
+    /* width: max-content; */
+    word-spacing: 1px;
+    word-break: break-all;
+}
+
+
+
+
+
+
+
+/* service section */
+
+#service .card {
+    background-color:transparent;
+    color: rgb(251, 255, 246);
+    border-radius: 10px !important;
+    transition: transform 1s ease-in-out;
+    padding: 2rem;
+    max-height: 30rem !important;
+}
+
+.card:hover{ 
+
+    border: 2px solid;
+   color: greenyellow !important;
+    transform: scale(1.1);
+}
+
+.card-heading{
+    word-wrap: break-word;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.card-content{
+    /* word-spacing: 2px; */
+    word-wrap: break-all;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Apply the animation to the service cards */
+.service-card {
+   
+    animation: fade-in 2.5s ease-in-out; 
+    
+    
+}
+
+
+.card-body{
+    margin: 0 !important;
+
+}
+
+
+
+
+
+  
+
+
+
+/*contact section  */
+
+
+.contact-input{
+    border: 2px solid rgb(117, 103, 103);
+    color: white;
+}
+
+
+.contact-input:focus{
+    border: 2px solid rgb(7, 7, 7);
+    
+}
+
+
+.invalid-feedback{
+    color: rgb(208, 128, 128);
+}
+
+
+.contact{
+   
+    /* width: 50vw; */
+    margin:5%;
+    margin-top: 10vh;
+    height: 20vh;
+    min-height: 20vh;
+    background-color: #352F44;
+    /* opacity: .5; */
+    border-radius: 20px ;
+    
+}
+
+form{
+    margin-top: 50px !important;
+}
+
+
+/* footer section */
+
+
+.footer-section{
+    background-color: #2c4570;
+    min-height: 200px;
+}
+
