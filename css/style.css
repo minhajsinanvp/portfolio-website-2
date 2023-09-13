@@ -231,7 +231,7 @@ body {
     /* word-wrap: break-word; */
     /* width: max-content; */
     word-spacing: 1px;
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
 
@@ -266,7 +266,7 @@ body {
 
 .card-content{
     /* word-spacing: 2px; */
-    word-wrap: break-all;
+    word-wrap: break-word;
     text-align: center;
 }
 

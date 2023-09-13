@@ -22,11 +22,11 @@
       margin-top: 2rem;
       display: block;
       /* word-break: break-all; */
+      word-wrap: break-word;
       /* width: 22.5rem; */
    }
 
    .card{
-      word-wrap: break-word;
       min-height:fit-content !important;
       padding: 10px !important;
       margin: 0 !important;
@@ -36,9 +36,9 @@
    
   
   .card-content{
-      word-spacing: 6px;
-      word-break: break-all;
-      text-align: center !important;
+      
+      word-wrap: break-word;
+      text-align: center ;
   }
 
   .card:hover{ 
