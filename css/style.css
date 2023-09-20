@@ -230,8 +230,8 @@ body {
 .about-content{
     /* word-wrap: break-word; */
     /* width: max-content; */
-    word-spacing: 1px;
-    word-wrap: break-word;
+    /* word-spacing: 1px; */
+    text-align: justify;
 }
 
 
@@ -267,7 +267,8 @@ body {
 .card-content{
     /* word-spacing: 2px; */
     word-wrap: break-word;
-    text-align: center;
+    text-align: justify;
+    /* text-align: center; */
 }
 
 

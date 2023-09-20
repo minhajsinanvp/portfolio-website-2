@@ -23,6 +23,7 @@
       display: block;
       /* word-break: break-all; */
       word-wrap: break-word;
+
       /* width: 22.5rem; */
    }
 
@@ -38,7 +39,8 @@
   .card-content{
       
       word-wrap: break-word;
-      text-align: center ;
+      /* text-align: center ; */
+      text-align: justify;
   }
 
   .card:hover{ 
