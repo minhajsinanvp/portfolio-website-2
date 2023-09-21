@@ -38,8 +38,31 @@ document.addEventListener('click', function (event) {
 });
 
 
-// scrollSpy
+// scrollSpy Manual bootstrap not working 
 
+        // JavaScript code for scrollspy
+        const sections = document.querySelectorAll('section');
+        const navbarLinks = document.querySelectorAll('#navbar a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - sectionHeight / 3) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navbarLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    
 
 
 // form validation

@@ -22,7 +22,8 @@
       margin-top: 2rem;
       display: block;
       /* word-break: break-all; */
-      word-wrap: break-word;
+      /* word-wrap: break-word; */
+      text-align: justify;
 
       /* width: 22.5rem; */
    }
@@ -38,7 +39,7 @@
   
   .card-content{
       
-      word-wrap: break-word;
+      /* word-wrap: break-word; */
       /* text-align: center ; */
       text-align: justify;
   }
@@ -52,7 +53,7 @@
 
   .contact{
 
-      min-height: 17rem;
+      min-height: fit-content;
       
    
   }
@@ -81,15 +82,24 @@
 
 
 
-@media (min-width:991px){
+@media (min-width:992px){
    .list-group-item{
       border: none;
    height: fit-content;
 
    }
+
+
+   .top-section{
+      height: 60px;
+   }
+
+   .sidebar{
+      margin-left: auto;
+   }
+
+   
 }
-
-
 
 
 

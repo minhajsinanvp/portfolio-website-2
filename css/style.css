@@ -96,16 +96,11 @@ body {
 
 
 .nav-link{
-    color: white;
+    /* color: white; */
     transition: font-size .5s;
+    color: white;
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    /* color: rgb(206, 255, 11); */
 
-    /* color: black; */
-    font-size: 1.5rem;
-
-}
 .nav-link:hover{
 
     font-size: 1.5rem;
@@ -122,6 +117,10 @@ body {
     margin: 0 0.5rem;
 }
 
+.active{
+    color: greenyellow !important;
+    transform: scale(1.5);
+}
 
 
 
@@ -140,8 +139,7 @@ body {
     display: flex;
     position: relative;
     width: 30%;
-    height: fit-conten;
-    border: 2px solid;
+    height: fit-content;
 }
 .offcanvas-title {
     cursor: pointer;
@@ -249,13 +247,14 @@ body {
     transition: transform 1s ease-in-out;
     padding: 2rem;
     max-height: 30rem !important;
+    width: 100%;
 }
 
 .card:hover{ 
 
     border: 2px solid;
    color: greenyellow !important;
-    transform: scale(1.1);
+    transform: scale(1..09);
 }
 
 .card-heading{
@@ -308,13 +307,13 @@ body {
 
 
 .contact-input:focus{
-    border: 2px solid rgb(7, 7, 7);
+    border: 2px solid rgb(255, 255, 255);
     
 }
 
 
 .invalid-feedback{
-    color: rgb(208, 128, 128);
+    color: rgb(240, 156, 156);
 }
 
 
@@ -322,12 +321,15 @@ body {
    
     /* width: 50vw; */
     margin:5%;
-    margin-top: 10vh;
-    height: 20vh;
-    min-height: 20vh;
-    background-color: #352F44;
+    margin-top: 100vh;
+    /* margin: 10vh 10vh; */
+    height: fit-content;
+    min-height: fit-content;
+    background-color: #275669;
     /* opacity: .5; */
     border-radius: 20px ;
+    max-width: 50vw;
+    
     
 }
 

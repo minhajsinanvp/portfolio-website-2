@@ -6,23 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Personal Portfolio</title>
     <link rel="shortcut icon" href="./images/user.svg" type="image/x-icon">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css//responsive-css.css">
 
   </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="90">
-
+  <body data-bs-spy="scroll" data-bs-target="#offcanvasNavbar" data-bs-offset="0">
     
     
 <header class="header-wrapper">
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
-    <div class="container-fluid ">
-      <a class="navbar-brand w-75" href="#">
+  <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+    <div class="container-fluid top-section">
+      <a class="navbar-brand w-50" href="#">
         <img src="./images/nav-log.png" alt="Portfolio">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -33,13 +31,13 @@
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body ">
+        <div class="offcanvas-body sidebar">
           <ul class="navbar-nav flex-grow-1 pe-3 list-group list-group-flush ">
             <li class="nav-item  list-group-item">
               <a class="nav-link " aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item list-group-item">
-              <a class="nav-link " aria-current="page" href="#about">About</a>
+              <a class="nav-link" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item list-group-item">
               <a class="nav-link " aria-current="page" href="#service">Service</a>
@@ -47,7 +45,6 @@
             <li class="nav-item list-group-item">
               <a class="nav-link " aria-current="page" href="#contact">Contact</a>
             </li>
-            <li class="nav-item list-group-item">
             </li>
             
           </ul>
@@ -88,8 +85,8 @@
 </section>
 
 
-<section id="about"  >
-  <div class="container">
+<section id="about">
+  <div class="container-fluid">
     <div class="row p-5">
       <div class="col-12  mb-5 text-center">
         <h1 class="section-headings">ABOUT</h1>
@@ -99,7 +96,10 @@
         <img src="./images/a.jpg" class="img-thumbnail" alt="">
       </div>
       <div class="col-12 col-md-7 text-center about-content d-flex justify-content-center align-items-center about-content">
-        <p>I'm  a passionate front-end web developer with a love for creating beautiful and functional websites. My journey in web development began with a curiosity to understand how websites work, and it has evolved into a fulfilling career.</p>
+        <p>I'm  a passionate front-end web developer with a love for creating beautiful and functional websites. My journey in web development began with a curiosity to understand how websites work, and it has evolved into a fulfilling career.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam fuga amet molestiae, dolore non esse voluptatibus temporibus nulla aut numquam tempore eos provident fugiat officia placeat ipsa tempora sit dolor?
+        </p>
+
        
     </div>
   </div>
@@ -111,7 +111,7 @@
 
  
     <section id="service">
-      <div class="container service-section">
+      <div class="container-fluid service-section m-1">
         <div class="row d-flex justify-content-space-around">
     
           <div class="col-12 text-center mb-">
@@ -193,24 +193,24 @@
     </section>
 
 
-    <section id="contact" class="contact">
-      <div class="container">
+    <section id="contact" class="contact m-auto">
+      <div class="container m-auto">
 
-        <div class="row">
-          <div class="col-12 text-center mt-2">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12  text-center mt-2">
             
-              <h3 class="section-headings text-warning">KEEP IN TOUCH</h3>
-              <form action="" class="row   d-flex justify-content-center  was-validated">
-                <div class="col-8  col-lg-4">
+              <h3 class="section-headings text-light">KEEP IN TOUCH</h3>
+              <form action="" class="row was-validated">
+                <div class="col-12  col-lg-10 m-auto">
 
-                 <input type="email" class="form-control-plaintext is-valid p-2 contact-input " placeholder="Email Address" required>
-                  <div class="invalid-feedback mt-2">
+                 <input type="email" class="form-control-plaintext is-valid p-2 contact-input mb-3" placeholder="Email Address" required>
+                  <div class="invalid-feedback mt-2 text-center">
                     Enter valid email Address
                   </div>
                 </div>
 
-                <div class="col-12 col-md-2 col-lg-1">
-                  <button type="submit" class="btn btn-outline-light submit-btn">Sumbit</button>
+                <div class="col-12 col-md-2 col-lg-2 w-50 m-auto mt-2">
+                  <button type="submit" class="btn btn-outline-light submit-btn mb-2">Sumbit</button>
                 </div>
               </form>
             </div>
@@ -250,9 +250,9 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+IxnH7H+wEhq3I8w5vxDf4c/pz2A5f5t5w5qF5I5T5t5M5i5w5qF5I5T5t5M5i5w5qF5I5T5t5M5i5g==" crossorigin="anonymous"></script>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
     <script  src="./js/myscript.js"></script>
   </body>
 </html>
