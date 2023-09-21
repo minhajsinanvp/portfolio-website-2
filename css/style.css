@@ -119,7 +119,7 @@ body {
 
 .active{
     color: greenyellow !important;
-    transform: scale(1.5);
+    font-size: 1.5rem;
 }
 
 
